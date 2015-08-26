@@ -13,6 +13,13 @@ learning and configuring a larger automation framework.
 * Add consistent error handling and usage printing
 * Add error handling for missing DIGITALOCEAN_TOKEN
 
+## Limitations
+
+DigitalOcean currently only lets you create 25 droplets on your account
+without manually requesting this limit be raised via their ticketing
+system.  Trying to create more than 25 droplets will truncate any
+droplets over this limit unless DigitalOcean modifies your account.
+
 ## Setup
 
 ```sh
