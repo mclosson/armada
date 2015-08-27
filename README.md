@@ -24,10 +24,12 @@ droplets over this limit unless DigitalOcean modifies your account.
 
 ```sh
 $ gem install droplet_kit
+$ curl -O https://raw.githubusercontent.com/mclosson/armada/master/armada.rb
+(Read armada.rb so you know what it does, its not much code at all)
 $ chmod +x armada.rb
-$ mv armada.rb ~/bin (optional)
+$ mv armada.rb ~/bin/armada (optional)
 $ export DIGITALOCEAN_TOKEN=YOUR_TOKEN_HERE
-$ armada.rb <options> (list|deploy|sink) <arguments>
+$ armada <options> (list|deploy|sink) <arguments>
 ```
 
 ## Examples
