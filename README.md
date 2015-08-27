@@ -64,6 +64,11 @@ $ armada list ssh_keys
 $ armada -v -n 5 -s 512mb -i freebsd-10-1-x64 -r nyc3 \
   -k 75:5d:29:38:a7:8e:c3:18:92:c3:7b:3e:b1:c2:a7:11 -d example.com deploy hadooped
   
+(or with long options)
+
+$ armada --verbose --number 5 --size 512mb --image freebsd-10-1-x64 --region nyc3 \
+  --ssh-keys 75:5d:29:38:a7:8e:c3:18:92:c3:7b:3e:b1:c2:a7:11 --domain example.com deploy hadooped
+  
 Created droplet hadooped0.example.com
 Created droplet hadooped1.example.com
 Created droplet hadooped2.example.com
